@@ -20,9 +20,14 @@ local mappings = {
     p = { '<cmd>Mason<cr>', 'Open Package Manager' },
     u = { '<cmd>MasonUpdate<cr>', 'Update Packages' },
     d = { '<cmd>MasonUninstallAll<cr>', 'Uninstall All Packages' }
+  },
+  t = {
+    name = 'Terminal',
+    o = { '<cmd>ToggleTerm 1 direction=horizontal<cr>', 'Open Terminal 1' },
+    s = { '<cmd>ToggleTerm 2 direction=horizontal<cr>', 'Open Terminal 2' },
+    t = { '<cmd>ToggleTerm 3 direction=horizontal<cr>', 'Open Terminal 3' },
   }
 }
-
 map('n', 'ss', '<cmd>split<cr>')
 map('n', 'sv', '<cmd>vsplit<cr>')
 

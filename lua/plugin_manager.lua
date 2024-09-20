@@ -74,6 +74,18 @@ local plugins = {
       require('config.alpha').setup()
     end
   },
+  {
+  'akinsho/toggleterm.nvim',
+  config = function()
+    require('toggleterm').setup({
+      -- Configurações adicionais, se necessário
+      size = 10,  -- Tamanho do terminal
+      open_mapping = [[<c-\>]],  -- Atalho para abrir o terminal
+      direction = 'horizontal',  -- Direção do terminal (horizontal, vertical, tab)
+      start_in_insert = true,  -- Começa em modo de inserção
+    })
+  end
+  }
 }
 
 lazy.setup(plugins)

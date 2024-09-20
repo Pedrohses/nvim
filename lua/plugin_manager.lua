@@ -7,7 +7,7 @@ local plugins = {
   'folke/neodev.nvim',
   'j-hui/fidget.nvim',
   'jose-elias-alvarez/null-ls.nvim',
-   'nvim-lualine/lualine.nvim',
+  'nvim-lualine/lualine.nvim',
   {
     'maxmx03/dracula.nvim',
     config = function()
@@ -61,6 +61,18 @@ local plugins = {
     dependencies = {
       'williamboman/mason-lspconfig.nvim'
     }
+  },
+  {
+    'ColaMint/pokemon.nvim',
+    config = function()
+     require('config.pokemon').setup()
+    end
+  },
+  {
+    'goolord/alpha-nvim',
+    config = function()
+      require('config.alpha').setup()
+    end
   },
 }
 

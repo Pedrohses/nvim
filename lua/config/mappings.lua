@@ -2,7 +2,8 @@ local map = vim.keymap.set
 
 local mappings = {
   e = { '<cmd>NvimTreeToggle<cr>', 'File Explorer'},
-  f = { '<cmd>Telescope find_files<cr>', 'Fuzzy Finder' },
+  f = { '<cmd>NvimTreeFocus<cr>', 'Focus Explorer' },
+  F = { '<cmd>Telescope find_files<cr>', 'Fuzzy Finder' },
   q = { '<cmd>quit<cr>', 'Quit'},
   Q = { '<cmd>quitall<cr>', 'Exit'},
   w = { '<cmd>update<cr>', 'Save'},

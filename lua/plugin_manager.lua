@@ -86,6 +86,19 @@ local plugins = {
     })
     end
   },
+  {
+    'maxmx03/diagpop.nvim',
+    opts = {
+      -- default config
+      limit = 10,
+      hl_group = 'NormalFloat',
+      border = 'rounded',
+      relative = 'editor', -- editor | cursor
+      dependencies = {
+        'nvim-tree/nvim-web-devicons'
+      }
+    }
+  },
 }
 
 lazy.setup(plugins)
